@@ -1,0 +1,124 @@
+{
+  "status": 200,
+  "message": null,
+  "payload": {
+    "query": "(hong)+AND+(kong)",
+    "totalHits": 7121,
+    "responseTimeMs": 10,
+    "securityInfoValid": false,
+    "page": 1,
+    "pageSize": 10,
+    "docList": [
+      {
+        "id": "23803",
+        "domain_name": "DPO_Homepage",
+        "title": "Hong Kong Authorized Economic Operator (AEO) Programme – A Trusted Trader Certification Programme That Benefits Imports and Exports | Digital Policy Office",
+        "content_summary": "<font color=red>Hong</font> <font color=red>Kong</font> Authorized Economic Operator (AEO) Programme – A Trusted Trader Certification Programme That Benefits Imports and Exports | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_government/business_facilitation/business_ready/hong_kong_good_stories/aeo_programme/#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_government/business_facilitation/business_ready/hong_kong_good_stories/aeo_programme/",
+        "document_type": "html",
+        "date": "2025-01-07",
+        "modified_time_string": "2025-01-07T18:00:00+08:00",
+        "document_size": "114347"
+      },
+      {
+        "id": "23247",
+        "domain_name": "DPO_Homepage",
+        "title": "Hong Kong Supplementary Character Set (HKSCS) | Digital Policy Office",
+        "content_summary": "<font color=red>Hong</font> <font color=red>Kong</font> Supplementary Character Set (HKSCS) | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/data_governance/policies_standards/ccli/hkscs/#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/data_governance/policies_standards/ccli/hkscs/",
+        "document_type": "html",
+        "date": "2021-01-15",
+        "modified_time_string": "2021-01-15T18:00:00+08:00",
+        "document_size": "109066"
+      },
+      {
+        "id": "22933",
+        "domain_name": "DPO_Homepage",
+        "title": "CLP Power Hong Kong Limited | 數字政策辦公室",
+        "content_summary": "CLP Power <font color=red>Hong</font> <font color=red>Kong</font> Limited | 數字政策辦公室. https://www.digitalpolicy.gov.hk/tc/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/career_corner/it_career_role_models_platform/clp/index.html#main javascript:;\nX  https://www.digitalpolicy.gov.hk/tc/about_us/work_force/contract_staff_services/ https://www.digitalpolicy.gov.hk/tc/our_work/digital_government/business_facilitation https://www.digitalpolicy.gov.hk/tc/our_work/digital_infrastructure/e_government",
+        "reference": "https://www.digitalpolicy.gov.hk/tc/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/career_corner/it_career_role_models_platform/clp/index.html",
+        "document_type": "html",
+        "date": "2020-10-12",
+        "modified_time_string": "2020-10-12T18:00:00+08:00",
+        "document_size": "117211"
+      },
+      {
+        "id": "20145",
+        "domain_name": "DPO_Homepage",
+        "title": "CLP Power Hong Kong Limited | 数字政策办公室",
+        "content_summary": "CLP Power <font color=red>Hong</font> <font color=red>Kong</font> Limited | 数字政策办公室. https://www.digitalpolicy.gov.hk/sc/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/career_corner/it_career_role_models_platform/clp/index.html#main\nSkip to main content  javascript:;\nX  https://www.digitalpolicy.gov.hk/sc/about_us/work_force/contract_staff_services/ https://www.digitalpolicy.gov.hk/sc/our_work/digital_government/business_facilitation https://www.digitalpolicy.gov.hk/sc/our_work/digital_infrastructure/e_government",
+        "reference": "https://www.digitalpolicy.gov.hk/sc/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/career_corner/it_career_role_models_platform/clp/index.html",
+        "document_type": "html",
+        "date": "2020-10-12",
+        "modified_time_string": "2020-10-12T18:00:00+08:00",
+        "document_size": "117435"
+      },
+      {
+        "id": "17820",
+        "domain_name": "DPO_Homepage",
+        "title": "Hong Kong/Guangdong Co-operation in Informatisation | Digital Policy Office",
+        "content_summary": "<font color=red>Hong</font> <font color=red>Kong</font>/Guangdong Co-operation in Informatisation | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/mainland/hongkong_guangdong/egci.html#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/mainland/hongkong_guangdong/egci.html",
+        "document_type": "html",
+        "date": "2025-01-27",
+        "modified_time_string": "2025-01-27T18:00:00+08:00",
+        "document_size": "139679"
+      },
+      {
+        "id": "17802",
+        "domain_name": "DPO_Homepage",
+        "title": "Measures Relevant to IT Industry under the Mainland and Hong Kong Closer Economic Partnership Arrangement (CEPA) | Digital Policy Office",
+        "content_summary": "Measures Relevant to IT Industry under the Mainland and <font color=red>Hong</font> <font color=red>Kong</font> Closer Economic Partnership Arrangement (CEPA) | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/mainland/cepa/it_industry.html#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/mainland/cepa/it_industry.html",
+        "document_type": "html",
+        "date": "2025-03-04",
+        "modified_time_string": "2025-03-04T18:00:00+08:00",
+        "document_size": "117832"
+      },
+      {
+        "id": "17569",
+        "domain_name": "DPO_Homepage",
+        "title": "Hong Kong IT Manpower | Digital Policy Office",
+        "content_summary": "<font color=red>Hong</font> <font color=red>Kong</font> IT Manpower | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/career_corner/hk_it_manpower/index.html#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/career_corner/hk_it_manpower/index.html",
+        "document_type": "html",
+        "date": "2024-06-23",
+        "modified_time_string": "2024-06-23T18:00:00+08:00",
+        "document_size": "132050"
+      },
+      {
+        "id": "17263",
+        "domain_name": "DPO_Homepage",
+        "title": "UOW College Hong Kong | Study Corner | Digital Policy Office",
+        "content_summary": "UOW College <font color=red>Hong</font> <font color=red>Kong</font> | Study Corner | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/study_corner/top_up/uow/#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/study_corner/top_up/uow/",
+        "document_type": "html",
+        "date": "2024-10-30",
+        "modified_time_string": "2024-10-30T18:00:00+08:00",
+        "document_size": "134564"
+      },
+      {
+        "id": "17244",
+        "domain_name": "DPO_Homepage",
+        "title": "The University of Hong Kong (Top-up / Senior Year Places Degree Programme) | Study Corner | Digital Policy Office",
+        "content_summary": "The University of <font color=red>Hong</font> <font color=red>Kong</font> (Top-up / Senior Year Places Degree Programme) | Study Corner | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/study_corner/top_up/top_up_hku/#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/study_corner/top_up/top_up_hku/",
+        "document_type": "html",
+        "date": "2023-04-17",
+        "modified_time_string": "2023-04-17T18:00:00+08:00",
+        "document_size": "138990"
+      },
+      {
+        "id": "17235",
+        "domain_name": "DPO_Homepage",
+        "title": "Technological and Higher Education Institute of Hong Kong | Study Corner | Digital Policy Office",
+        "content_summary": "Technological and Higher Education Institute of <font color=red>Hong</font> <font color=red>Kong</font> | Study Corner | Digital Policy Office. https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/study_corner/top_up/top_up_thei/#main javascript:;\nFacebook  Search for Keywords in Mobile Search Bar  https://www.digitalpolicy.gov.hk/en/about_us/perf_pledges/\nPerformance Pledges  https://www.digitalpolicy.gov.hk/en/our_work/data_governance/management_consultancy\nManagement Consultancy",
+        "reference": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/industry_development/ict_manpower/student_it_corner/study_corner/top_up/top_up_thei/",
+        "document_type": "html",
+        "date": "2024-11-01",
+        "modified_time_string": "2024-11-01T18:00:00+08:00",
+        "document_size": "134252"
+      }
+    ]
+  }
+}

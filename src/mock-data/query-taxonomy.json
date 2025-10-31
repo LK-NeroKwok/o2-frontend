@@ -1,0 +1,33 @@
+{
+  "status": 200,
+  "message": null,
+  "payload": {
+    "query": "(hong)+AND+(kong)",
+    "securityInfoValid": false,
+    "groupList": [
+      {
+        "groupBy": "document_type",
+        "totalHits": 7120,
+        "totalGroups": 7,
+        "count": {
+          "pdf": 3270,
+          "html": 3793,
+          "docx": 43,
+          "xlsx": 3,
+          "xls": 4,
+          "plain": 4,
+          "csv": 3
+        }
+      },
+      {
+        "groupBy": "domain_name",
+        "totalHits": 7121,
+        "totalGroups": 2,
+        "count": {
+          "DPO_Homepage": 7120,
+          "SynonymsDB": 1
+        }
+      }
+    ]
+  }
+}

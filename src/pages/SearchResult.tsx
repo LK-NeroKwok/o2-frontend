@@ -14,6 +14,7 @@ import {
   Stack,
   Box,
   Paper,
+  useMantineTheme,
 } from "@mantine/core";
 import search from "../mock-data/search.json";
 import type { SelectOption } from "../types/select-options";
@@ -35,12 +36,14 @@ const SearchResult = () => {
     { value: "2y", label: "Last 2 years" },
   ];
 
+  const theme = useMantineTheme();
+
   const options = {
     replace: (domNode: DOMNode) => {
       if (domNode.type === "tag" && domNode.attribs) {
         if (domNode.name === "font" && domNode.attribs.color === "red") {
           return (
-            <Text component="span" c="red" inherit>
+            <Text component="span" fw={700} c={theme.colors.red[9]} inherit>
               {domToReact(domNode.children as DOMNode[], options)}
             </Text>
           );
@@ -48,6 +51,8 @@ const SearchResult = () => {
       }
     },
   };
+
+  console.log(searchResults);
 
   return (
     <>
@@ -66,7 +71,7 @@ const SearchResult = () => {
         </Group>
         <Button>Help</Button>
       </Group>
-      <Group gap={"xs"} mt={10} pl={350}>
+      <Group gap={"xs"} my={10} pl={350}>
         <Group gap="xs" wrap="nowrap">
           <Checkbox radius="xs" size="xs" />
           <Text size="13px" fw={500}>
@@ -75,20 +80,61 @@ const SearchResult = () => {
         </Group>
         <NativeSelect data={searchRangeOptions} />
       </Group>
-      <Paper bg={"#BBE1E2"} p={10}>
+      <Paper radius={0} bg={"#BBE1E2"} p={10}>
         <Box>
-          <Text>{`Result 1 - ${searchResults.payload.docList.length} of ~${searchResults.payload.totalHits} for []`}</Text>
+          <Text>
+            {`Result 1 - ${searchResults.payload.docList.length} of ~${
+              searchResults.payload.totalHits
+            } for${" "}`}
+            <Text component="span" fw={700}>
+              {`[query]`}
+            </Text>
+          </Text>
         </Box>
         {searchResults.payload.docList.map((result, index) => {
           return (
             <Box key={index}>
-              <Text
-                c={"blue"}
-                td={"underline"}
-              >{`${index}. [${result.document_type.toUpperCase()}] ${
-                result.title
-              }`}</Text>
-              <Text>{parse(result.content_summary, options)}</Text>
+              <Stack gap={"xs"} py={10} key={index}>
+                <Text c={"blue"} td={"underline"}>{`${
+                  index + 1
+                }. [${result.document_type.toUpperCase()}] ${
+                  result.title
+                }`}</Text>
+                <Text lineClamp={3}>
+                  {parse(result.content_summary, options)}
+                </Text>
+                <Text
+                  styles={{ root: { overflowWrap: "break-word" } }}
+                  c={"blue"}
+                >
+                  {result.reference}
+                </Text>
+              </Stack>
+              <Group>
+                <Text fw={700} td={"underline"}>
+                  Search Similar Page
+                </Text>
+                <Text>
+                  <Text component="span" fw={700}>
+                    Date:{" "}
+                  </Text>
+                  {result.modified_time_string}
+                </Text>
+
+                <Text>
+                  <Text component="span" fw={700}>
+                    Size:{" "}
+                  </Text>
+                  {(Number(result.document_size) / (1024 * 1024)).toFixed(2)} MB
+                </Text>
+
+                <Text>
+                  <Text component="span" fw={700}>
+                    Source:{" "}
+                  </Text>
+                  {result.domain_name}
+                </Text>
+              </Group>
             </Box>
           );
         })}

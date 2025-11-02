@@ -14,7 +14,7 @@ import {
   Select,
 } from "@mantine/core";
 import { useLocation } from "wouter";
-import type { SelectOption } from "../types/SearchResult/types";
+import type { SelectOption } from "../types/select-options";
 
 const Home = () => {
   const queryOptionTexts: string[] = [

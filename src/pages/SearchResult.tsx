@@ -7,14 +7,14 @@ import {
   Divider,
   Checkbox,
   Group,
-  SimpleGrid,
   NativeSelect,
   Radio,
   UnstyledButton,
   Select,
+  Stack,
 } from "@mantine/core";
 import search from "../mock-data/search.json";
-import type { SelectOption } from "../types/SearchResult/types";
+import type { SelectOption } from "../types/select-options";
 
 const SearchResult = () => {
   console.log(search);
@@ -49,8 +49,17 @@ const SearchResult = () => {
         </Button>
       </Group>
       <Group gap={"xs"} mt={10}>
-        <NativeSelect />
+        <Group gap="xs" wrap="nowrap">
+          <Checkbox radius="xs" size="xs" />
+          <Text size="13px" fw={500}>
+            {"Exact Match"}
+          </Text>
+        </Group>
+        <NativeSelect data={searchRangeOptions} />
       </Group>
+      <Stack>
+        <Text>{`Results for "}"`}</Text>
+      </Stack>
     </>
   );
 };

@@ -12,12 +12,16 @@ import {
   UnstyledButton,
   Select,
   Stack,
+  Box,
+  Paper,
 } from "@mantine/core";
 import search from "../mock-data/search.json";
 import type { SelectOption } from "../types/select-options";
+import type { Search } from "../types/api";
+import parse, { domToReact, type DOMNode, Element } from "html-react-parser";
 
 const SearchResult = () => {
-  console.log(search);
+  const searchResults: Search = search;
 
   const searchRangeOptions: SelectOption[] = [
     { value: "any", label: "Anytime" },
@@ -31,24 +35,38 @@ const SearchResult = () => {
     { value: "2y", label: "Last 2 years" },
   ];
 
+  const options = {
+    replace: (domNode: DOMNode) => {
+      if (domNode.type === "tag" && domNode.attribs) {
+        if (domNode.name === "font" && domNode.attribs.color === "red") {
+          return (
+            <Text component="span" c="red" inherit>
+              {domToReact(domNode.children as DOMNode[], options)}
+            </Text>
+          );
+        }
+      }
+    },
+  };
+
   return (
     <>
       <Group bg={"gray"} justify="space-between">
-        <TextInput w={350} />
+        <Group gap={"xs"}>
+          <TextInput w={350} />
+          <Button px={10} w="auto">
+            New Search
+          </Button>
+          <Button px={10} w="auto">
+            Search Within Result
+          </Button>
+          <Button px={10} w="auto">
+            Advanced Search
+          </Button>
+        </Group>
         <Button>Help</Button>
       </Group>
-      <Group gap={"xs"} mt={10}>
-        <Button px={10} w="auto">
-          New Search
-        </Button>
-        <Button px={10} w="auto">
-          Search Within Result
-        </Button>
-        <Button px={10} w="auto">
-          Advanced Search
-        </Button>
-      </Group>
-      <Group gap={"xs"} mt={10}>
+      <Group gap={"xs"} mt={10} pl={350}>
         <Group gap="xs" wrap="nowrap">
           <Checkbox radius="xs" size="xs" />
           <Text size="13px" fw={500}>
@@ -57,9 +75,24 @@ const SearchResult = () => {
         </Group>
         <NativeSelect data={searchRangeOptions} />
       </Group>
-      <Stack>
-        <Text>{`Results for "}"`}</Text>
-      </Stack>
+      <Paper bg={"#BBE1E2"} p={10}>
+        <Box>
+          <Text>{`Result 1 - ${searchResults.payload.docList.length} of ~${searchResults.payload.totalHits} for []`}</Text>
+        </Box>
+        {searchResults.payload.docList.map((result, index) => {
+          return (
+            <Box key={index}>
+              <Text
+                c={"blue"}
+                td={"underline"}
+              >{`${index}. [${result.document_type.toUpperCase()}] ${
+                result.title
+              }`}</Text>
+              <Text>{parse(result.content_summary, options)}</Text>
+            </Box>
+          );
+        })}
+      </Paper>
     </>
   );
 };

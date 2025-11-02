@@ -1,6 +1,6 @@
 // Response
 export interface Search {
-  message?: string;
+  message?: string | null;
   status: number;
   payload: Payload;
 }
